@@ -58,6 +58,12 @@ a:hover {
     color: var(--custom-orange) !important;
 }
 
+header {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*
     id selectors
 */
@@ -157,6 +163,94 @@ a:hover {
     cursor: pointer;
 }
 
+#category {
+    margin-top: 200px;
+}
+
+#category-group {
+    position: absolute;
+    right: 60px;
+}
+
+#category-selected {
+    background: #FFFFFF;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02),
+    0 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+    0 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+    0 20px 13px rgba(0, 0, 0, 0.01),
+    0 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+    0 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 36px;
+}
+
+#category-selected:after {
+    position: absolute;
+    content: url("../images/Rectangle 157.png");
+    left: 10%;
+    top: 80%;
+}
+
+#category h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#category h3 {
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+}
+
+#category h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 30px;
+}
+
+#category p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    padding-top: 15px;
+}
+
+#category-row {
+    margin-top: 70px;
+}
+
+#destinations {
+    margin-top: 200px;
+}
+
+#destinations h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+#destinations h3 {
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+}
+
+#destinations img {
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    border-radius: 24px;
+}
+
+#destinations .swiper {
+    cursor: grab;
+}
+
 /*
     class selectors
 */
@@ -250,6 +344,51 @@ a:hover {
     position: absolute;
     width: 167px;
     height: 154px;
+}
+
+.category-photo {
+    position: relative;
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-box {
+    position: relative;
+}
+
+.category-box:nth-child(1) .category-photo:after {
+    position: absolute;
+    bottom: -5%;
+    left: 53%;
+    content: url("../images/rectangle-right.png");
+    z-index: -1;
+}
+
+.category-box:nth-child(2) .category-photo:after {
+    position: absolute;
+    bottom: -5%;
+    left: 53%;
+    content: url("../images/rectangle-up.png");
+    z-index: -1;
+}
+
+.category-box:nth-child(3) .category-photo:after {
+    position: absolute;
+    top: 12%;
+    left: 53%;
+    content: url("../images/rectangle-up-right.png");
+    z-index: -1;
+}
+
+.category-box:nth-child(4) .category-photo:after {
+    position: absolute;
+    bottom: -5%;
+    left: 53%;
+    content: url("../images/rectangle-bottom-right.png");
+    z-index: -1;
 }
 
 /*
