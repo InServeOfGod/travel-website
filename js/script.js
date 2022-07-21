@@ -1,13 +1,15 @@
 "use strict"
 
-// initialize swiper
+// initialize swiper(s)
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: true,
+
     breakpoints: {
         960: {
             spaceBetween: 25,
@@ -20,10 +22,12 @@ const swiper = new Swiper('.swiper', {
     }
 })
 
-/*const swiper2 = new Swiper('.swiper-testimonials', {
+const swiper2 = new Swiper('.swiper2', {
     // Optional parameters
-    direction: 'vertical',
-    loop: true,
+    direction: 'horizontal',
+    loop: false,
+    slidesPerView: 1,
+    spaceBetween: 0,
 
     //  pagination
     pagination: {
@@ -36,4 +40,22 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-})*/
+})
+
+const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 0,
+    autoplay: true,
+
+    breakpoints: {
+        990: {
+            slidesPerView: 5
+        },
+        550: {
+            slidesPerView: 3
+        }
+    }
+})
